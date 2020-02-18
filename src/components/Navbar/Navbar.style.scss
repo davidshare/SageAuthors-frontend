@@ -1,0 +1,138 @@
+@import '../../assets/styles/variables';
+
+#navbar {
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0;
+    border-bottom: 1px solid $secondary-white;
+
+
+    img.avatar-mobile {
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .nav-close {
+      padding-top: 5px;
+      font-size: 1.5em;
+    }
+  }
+
+  .avatar{
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-top: 20px;
+
+    li {
+      padding: 10px 0;
+
+      &.signin-link{
+        margin-top: 10px;
+        padding-top: 20px;
+        border-top: 1px solid $secondary-white;
+      }
+    }
+  }
+
+  .nav-list li a {
+    transition: 0.3s ease 0s;
+  }
+
+  .nav-list li a:hover, .nav-auth-links li a:hover {
+    font-weight: bold;
+  }
+
+  .nav-auth-links{
+    display: none;
+  }
+
+}
+
+.hideNav {
+  display: none;
+}
+
+@media screen and (min-width: 860px) {
+  #navbar {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid $secondary-white;
+
+    .top-nav {
+      border-bottom: 0;
+      padding: 5px 5px 5px 0;
+
+      .nav-close, .nav-open{
+        display: none;
+      }
+
+      .avatar-mobile{
+        display: none;
+      }
+    }
+
+    #nav {
+      display: block;
+
+      .nav-list {
+        flex-direction: row;
+        padding: 0 10px;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .nav-list li{
+        padding: 0 10px;
+      }
+
+      .nav-list li.signup-link, .nav-list li.signin-link{
+        display: none;
+      }
+
+    }
+
+    .nav-auth-links{
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+
+      li{
+        padding: 0 20px;
+      }
+
+      li.signup-link{
+        border: 1px solid $secondary-dark;
+        padding: 5px 10px;
+        border-radius: 50px;
+      }
+
+      li.signup-link:hover{
+        background-color: $primary-dark;
+
+        a{
+          color: $white;
+          font-weight: normal;
+        }
+      }
+    }
+
+    img.avatar {
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+}
