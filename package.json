@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/davidshare/SageAuthors-frontend.git",
   "author": "davidshare <davidessienshare@gmail.com>",
-  "license": "MIT",
+  "license": "GNU",
   "scripts": {
     "start:dev": "webpack-dev-server",
     "build": "yarn webpack --config webpack.config.prod.js",
@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "sass": "^1.25.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
