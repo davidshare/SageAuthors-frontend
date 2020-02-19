@@ -886,7 +886,7 @@ var menu_default = /*#__PURE__*/__webpack_require__.n(menu);
 
 
 var Navbar_component_Navbar = function Navbar() {
-  var _useState = Object(react["useState"])(true),
+  var _useState = Object(react["useState"])(false),
       _useState2 = slicedToArray_default()(_useState, 2),
       authenticated = _useState2[0],
       setAuthenticated = _useState2[1];
@@ -896,12 +896,20 @@ var Navbar_component_Navbar = function Navbar() {
       showMenu = _useState4[0],
       setShowMenu = _useState4[1];
 
+  var _useState5 = Object(react["useState"])(window.innerWidth),
+      _useState6 = slicedToArray_default()(_useState5, 2),
+      windowSize = _useState6[0],
+      setWindowSize = _useState6[1];
+
+  window.addEventListener('resize', function () {
+    setWindowSize(window.innerWidth);
+  });
   return react_default.a.createElement("div", {
     className: "navbar container",
     id: "navbar"
   }, react_default.a.createElement("div", {
     className: "top-nav"
-  }, react_default.a.createElement("h1", {
+  }, react_default.a.createElement("h2", {
     className: "nav-brand"
   }, "SageAuthors"), !authenticated && !showMenu && react_default.a.createElement("img", {
     src: menu_default.a,
@@ -918,9 +926,9 @@ var Navbar_component_Navbar = function Navbar() {
   }, "\u2715"), authenticated && react_default.a.createElement("img", {
     src: "../../assets/images/avatar.png",
     alt: "",
-    className: "avatar",
+    className: "avatar-mobile",
     onClick: function onClick() {
-      return window.innerWidth < 960 ? setShowMenu(!showMenu) : '';
+      return windowSize < 860 ? setShowMenu(!showMenu) : '';
     }
   })), react_default.a.createElement("nav", {
     className: showMenu ? 'nav' : 'hideNav',
@@ -937,9 +945,7 @@ var Navbar_component_Navbar = function Navbar() {
     href: "sports"
   }, "Technology")), react_default.a.createElement("li", null, react_default.a.createElement("a", {
     href: "sports"
-  }, "Fashion")), react_default.a.createElement("li", null, react_default.a.createElement("a", {
-    href: "sports"
-  }, "Music")), !authenticated && react_default.a.createElement("li", {
+  }, "More")), !authenticated && react_default.a.createElement("li", {
     className: "signin-link"
   }, react_default.a.createElement("a", {
     href: "signin"
@@ -947,7 +953,24 @@ var Navbar_component_Navbar = function Navbar() {
     className: "signup-link"
   }, react_default.a.createElement("a", {
     href: "signup"
-  }, "Signup")))));
+  }, "Signup")))), react_default.a.createElement("ul", {
+    className: "nav-auth-links"
+  }, !authenticated && react_default.a.createElement("li", {
+    className: "signin-link"
+  }, react_default.a.createElement("a", {
+    href: "signin"
+  }, "Signin")), !authenticated && react_default.a.createElement("li", {
+    className: "signup-link"
+  }, react_default.a.createElement("a", {
+    href: "signup"
+  }, "Signup")), authenticated && react_default.a.createElement("li", null, react_default.a.createElement("img", {
+    src: "../../assets/images/avatar.png",
+    alt: "",
+    className: "avatar",
+    onClick: function onClick() {
+      return windowSize < 860 ? setShowMenu(!showMenu) : '';
+    }
+  }))));
 };
 
 /* harmony default export */ var Navbar_component = (Navbar_component_Navbar);
