@@ -886,7 +886,7 @@ var menu_default = /*#__PURE__*/__webpack_require__.n(menu);
 
 
 var Navbar_component_Navbar = function Navbar() {
-  var _useState = Object(react["useState"])(false),
+  var _useState = Object(react["useState"])(true),
       _useState2 = slicedToArray_default()(_useState, 2),
       authenticated = _useState2[0],
       setAuthenticated = _useState2[1];
@@ -920,11 +920,12 @@ var Navbar_component_Navbar = function Navbar() {
     alt: "",
     className: "avatar",
     onClick: function onClick() {
-      return setShowMenu(!showMenu);
+      return window.innerWidth < 960 ? setShowMenu(!showMenu) : '';
     }
   })), react_default.a.createElement("nav", {
-    className: showMenu ? 'nav' : 'hideNav'
-  }, react_default.a.createElement("ol", {
+    className: showMenu ? 'nav' : 'hideNav',
+    id: "nav"
+  }, react_default.a.createElement("ul", {
     className: "nav-list"
   }, react_default.a.createElement("li", null, react_default.a.createElement("a", {
     href: "sports"
