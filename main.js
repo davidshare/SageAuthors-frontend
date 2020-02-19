@@ -893,8 +893,8 @@ var Navbar_component_Navbar = function Navbar() {
 
   var _useState3 = Object(react["useState"])(false),
       _useState4 = slicedToArray_default()(_useState3, 2),
-      navOpen = _useState4[0],
-      setNavOpen = _useState4[1];
+      showMenu = _useState4[0],
+      setShowMenu = _useState4[1];
 
   return react_default.a.createElement("div", {
     className: "navbar container",
@@ -903,24 +903,27 @@ var Navbar_component_Navbar = function Navbar() {
     className: "top-nav"
   }, react_default.a.createElement("h1", {
     className: "nav-brand"
-  }, "SageAuthors"), !authenticated && !navOpen && react_default.a.createElement("img", {
+  }, "SageAuthors"), !authenticated && !showMenu && react_default.a.createElement("img", {
     src: menu_default.a,
     alt: "",
     className: "nav-open",
     onClick: function onClick() {
-      return setNavOpen(true);
+      return setShowMenu(true);
     }
-  }), !authenticated && navOpen && react_default.a.createElement("div", {
+  }), !authenticated && showMenu && react_default.a.createElement("div", {
     className: "nav-close",
     onClick: function onClick() {
-      return setNavOpen(false);
+      return setShowMenu(false);
     }
   }, "\u2715"), authenticated && react_default.a.createElement("img", {
     src: "../../assets/images/avatar.png",
     alt: "",
-    className: "avatar"
+    className: "avatar",
+    onClick: function onClick() {
+      return setShowMenu(!showMenu);
+    }
   })), react_default.a.createElement("nav", {
-    className: "nav"
+    className: showMenu ? 'nav' : 'hideNav'
   }, react_default.a.createElement("ol", {
     className: "nav-list"
   }, react_default.a.createElement("li", null, react_default.a.createElement("a", {
