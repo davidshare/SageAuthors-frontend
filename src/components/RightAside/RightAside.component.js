@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './RightAside.styles.scss';
+import avatar from '../../assets/images/avatar.png';
 
 export const handleSubscribe = (e) => {
   e.preventDefault();
@@ -13,7 +14,7 @@ const RightAside = () => (
       <h3 className="popular-articles-title">Popular</h3>
 
       <div className="popular-article-block">
-        <img src="../../assets/images/avatar.png" />
+        <img src={avatar} />
         <p className="popular-articles-text">
           <a href="" className="popular-article-comment">
             Lorem Ipsum
@@ -25,7 +26,7 @@ const RightAside = () => (
       </div>
 
       <div className="popular-article-block">
-        <img src="../../assets/images/avatar.png" />
+        <img src={avatar} />
         <p className="popular-articles-text">
           <a href="" className="popular-article-comment">
             Lorem Ipsum
@@ -37,7 +38,7 @@ const RightAside = () => (
       </div>
 
       <div className="popular-article-block">
-        <img src="../../assets/images/avatar.png" />
+        <img src={avatar} />
         <p className="popular-articles-text">
           <a href="" className="popular-article-comment">
             Lorem Ipsum
@@ -49,7 +50,7 @@ const RightAside = () => (
       </div>
 
       <div className="popular-article-block">
-        <img src="../../assets/images/avatar.png" />
+        <img src={avatar} />
         <p className="popular-articles-text">
           <a href="" className="popular-article-comment">
             Lorem Ipsum
@@ -61,7 +62,7 @@ const RightAside = () => (
       </div>
 
       <div className="popular-article-block">
-        <img src="../../assets/images/avatar.png" />
+        <img src={avatar} />
         <p className="popular-articles-text">
           <a href="" className="popular-article-comment">
             Lorem Ipsum
