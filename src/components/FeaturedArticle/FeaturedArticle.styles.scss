@@ -1,0 +1,29 @@
+@import '../../assets/styles/variables';
+
+.featured-article{
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+
+  .featured-article-category, .featured-article-details, .featured-article-title{
+    text-align: center;
+  }
+
+  .featured-article-category, .featured-article-details{
+    margin: 5px 0;
+    font-size: 0.8em;
+    color: $secondary-dark;
+  }
+
+  .featured-article-title{
+    margin: 20px 0;
+    font-size: 1.5em;
+    text-transform: capitalize;
+  }
+
+  .featured-article-content{
+    text-align: justify;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+}

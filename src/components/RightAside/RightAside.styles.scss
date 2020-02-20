@@ -1,0 +1,87 @@
+@import '../../assets/styles/variables';
+
+.right-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .popular-articles {
+    display: block;
+
+    .popular-articles-title {
+      text-align: center;
+    }
+
+    .popular-article-block {
+      display: flex;
+      margin: 30px 0;
+    }
+
+    .popular-article-block img {
+      width: 100px;
+    }
+
+    .popular-article-block p.popular-articles-text {
+      padding-left: 40px;
+    }
+
+    .popular-article-block p.popular-articles-text a {
+      display: block;
+    }
+
+    .popular-article-block p.popular-articles-text a.popular-article-title {
+      margin: 15px 0;
+      color: $black;
+    }
+
+    .popular-article-block p.popular-articles-text a.popular-article-comment {
+      color: $secondary-dark;
+      font-size: 0.9em;
+    }
+  }
+
+  .subscribe-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $secondary-white;
+    padding: 20px;
+
+    input, button{
+      font-size: 1em;
+      margin: 10px;
+    }
+
+    input{
+      border: 1px solid $secondary-white;
+      border-radius: 5px;
+      outline: none;
+      padding: 10px;
+    }
+
+    button{
+      border-radius: 50px;
+      background-color: $primary-dark;
+      color: $white;
+      padding: 10px 15px;
+      outline: none;
+    }
+
+    button:hover{
+      background-color: $white;
+      // border: 1px solid $primary-dark;
+      color: $primary-dark;
+      cursor: pointer;
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+  .right-aside .popular-articles .popular-articles-title {
+    text-align: left;
+  }
+}
