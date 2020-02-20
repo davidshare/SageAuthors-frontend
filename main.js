@@ -1129,6 +1129,22 @@ var LeftAside_component_LeftAside = function LeftAside() {
   }, "Lorem Ipsum"), react_default.a.createElement("a", {
     href: "",
     className: "trending-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit.")), react_default.a.createElement("p", {
+    className: "trending-article-block"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-comments"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit.")), react_default.a.createElement("p", {
+    className: "trending-article-block"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-comments"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-title"
   }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit."))));
 };
 
@@ -1145,7 +1161,9 @@ var RightAside_component_RightAside = function RightAside() {
     className: "right-aside"
   }, react_default.a.createElement("div", {
     className: "popular-articles"
-  }, react_default.a.createElement("h3", null, "Popular"), react_default.a.createElement("div", {
+  }, react_default.a.createElement("h3", {
+    className: "popular-articles-title"
+  }, "Popular"), react_default.a.createElement("div", {
     className: "popular-article-block"
   }, react_default.a.createElement("img", {
     src: "../../assets/images/avatar.png"
@@ -1193,7 +1211,34 @@ var RightAside_component_RightAside = function RightAside() {
   }, "Lorem Ipsum"), react_default.a.createElement("a", {
     href: "",
     className: "popular-article-title"
-  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit.")))));
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit."))), react_default.a.createElement("div", {
+    className: "popular-article-block"
+  }, react_default.a.createElement("img", {
+    src: "../../assets/images/avatar.png"
+  }), react_default.a.createElement("p", {
+    className: "popular-articles-text"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "popular-article-comment"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "popular-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit.")))), react_default.a.createElement("form", {
+    className: "subscribe-form",
+    onSubmit: function onSubmit(e) {
+      return e.preventDefault();
+    }
+  }, react_default.a.createElement("label", {
+    htmlFor: "email"
+  }, "Subscribe"), react_default.a.createElement("input", {
+    type: "email",
+    name: "subscribe-email",
+    placeholder: "Email"
+  }), react_default.a.createElement("button", {
+    type: "submit",
+    name: "submit",
+    onClick: function onClick() {}
+  }, " Subscribe ")));
 };
 
 /* harmony default export */ var RightAside_component = (RightAside_component_RightAside);
@@ -1223,7 +1268,7 @@ var FeaturedArticle_component_FeaturedArticle = function FeaturedArticle() {
     className: "featured-article-title"
   }, "lorem ipsum title"), react_default.a.createElement("p", {
     className: "featured-article-content"
-  }, "lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua hic tempora est veritatis culpa fugiat doloribus fugit in sed harum veniam porro eveniet maxime labore assumenda non illum possimus aut vero laudantium cum magni numquam dolorem explicabo quidem quasi nesciunt ipsum deleniti facilis neque similique nisi ad magnam accusamus quae provident dolor ab atque modi laboriosam fuga suscipit ea beatae ipsam consequatur saepe dolore nulla error quo iusto expedita nemo commodi aspernatur aliquam enim reiciendis rerum necessitatibus recusandae sint amet placeat temporibus autem iste deserunt esse dolores reprehenderit doloremque pariatur velit maiores repellat dignissimos asperiores aperiam alias a corporis id praesentium voluptatibus soluta voluptatem sit molestiae quas odio facere nostrum laborum incidunt eaque nihil ullam rem mollitia at cumque iure tenetur tempore totam repudiandae quisquam quod architecto officia vitae consectetur cupiditate molestias delectus voluptates earum et impedit quibusdam odit sequi perferendis eius perspiciatis eos quam quaerat officiis sunt ratione consequuntur quia quis obcaecati repellendus exercitationem vel minima libero blanditiis eligendi minus dicta voluptas excepturi nam eum inventore voluptatum ducimus sapiente dolorum itaque ipsa qui omnis debitis voluptate quos aliquid accusantium ex illo corrupti ut adipisci natus animi distinctio optio nobis unde similique excepturi vero culpa molestias fugit dolorum non amet iure inventore nihil suscipit explicabo veritatis officiis distinctio nesciunt saepe incidunt", ' '));
+  }, "lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua hic tempora est veritatis culpa fugiat doloribus fugit in sed harum veniam porro eveniet maxime labore assumenda non illum possimus aut vero laudantium cum magni numquam dolorem explicabo quidem quasi nesciunt ipsum deleniti facilis neque similique nisi ad magnam accusamus quae provident dolor ab atque modi laboriosam fuga suscipit ea beatae ipsam consequatur saepe dolore nulla error quo iusto expedita nemo commodi aspernatur aliquam enim reiciendis rerum necessitatibus recusandae sint amet placeat temporibus autem iste deserunt esse dolores reprehenderit doloremque pariatur velit maiores repellat dignissimos asperiores aperiam alias a corporis id"));
 };
 
 /* harmony default export */ var FeaturedArticle_component = (FeaturedArticle_component_FeaturedArticle);
