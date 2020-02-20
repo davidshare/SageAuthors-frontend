@@ -341,7 +341,7 @@ module.exports = __webpack_require__.p + "menu.svg";
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(27);
+module.exports = __webpack_require__(28);
 
 
 /***/ }),
@@ -859,6 +859,12 @@ module.exports = _nonIterableRest;
 
 /***/ }),
 /* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1115,6 +1121,14 @@ var LeftAside_component_LeftAside = function LeftAside() {
   }, "Lorem Ipsum"), react_default.a.createElement("a", {
     href: "",
     className: "trending-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit.")), react_default.a.createElement("p", {
+    className: "trending-article-block"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-comments"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-title"
   }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit."))));
 };
 
@@ -1183,7 +1197,11 @@ var RightAside_component_RightAside = function RightAside() {
 };
 
 /* harmony default export */ var RightAside_component = (RightAside_component_RightAside);
+// EXTERNAL MODULE: ./src/components/FeaturedArticle/FeaturedArticle.styles.scss
+var FeaturedArticle_styles = __webpack_require__(26);
+
 // CONCATENATED MODULE: ./src/components/FeaturedArticle/FeaturedArticle.component.js
+
 
 
 var FeaturedArticle_component_FeaturedArticle = function FeaturedArticle() {
@@ -1199,9 +1217,9 @@ var FeaturedArticle_component_FeaturedArticle = function FeaturedArticle() {
     className: "featured-article-details"
   }, react_default.a.createElement("span", {
     className: "featured-article-date"
-  }), react_default.a.createElement("span", {
+  }, "12/10/2020"), react_default.a.createElement("span", {
     className: "featured-article-comments"
-  })), react_default.a.createElement("h3", {
+  }, "234 comments")), react_default.a.createElement("h3", {
     className: "featured-article-title"
   }, "lorem ipsum title"), react_default.a.createElement("p", {
     className: "featured-article-content"
@@ -1210,7 +1228,7 @@ var FeaturedArticle_component_FeaturedArticle = function FeaturedArticle() {
 
 /* harmony default export */ var FeaturedArticle_component = (FeaturedArticle_component_FeaturedArticle);
 // EXTERNAL MODULE: ./src/components/LandingPageArticles/LandingPageArticles.styles.scss
-var LandingPageArticles_styles = __webpack_require__(26);
+var LandingPageArticles_styles = __webpack_require__(27);
 
 // CONCATENATED MODULE: ./src/components/LandingPageArticles/LandingPageArticles.component.js
 
