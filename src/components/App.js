@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar/Navbar.component';
 
 import './App.scss';
+import LandingPageGallery from './LandingPageGallery/LandingPageGallery.component';
 
 /**
  * @class App
@@ -16,6 +17,7 @@ class App extends Component {
     return (
       <div>
         <Navbar />
+        <LandingPageGallery />
       </div>
     );
   }

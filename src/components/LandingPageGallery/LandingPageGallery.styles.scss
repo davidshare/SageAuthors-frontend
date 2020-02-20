@@ -1,0 +1,64 @@
+@import '../../assets/styles/variables';
+
+.home-gallery{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 350px;
+  gap: 16px;
+  margin: 40px 0;
+
+  .card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 20px;
+    transition: all .3s ease;
+    background-image: linear-gradient(
+      to bottom,
+    rgba(10,10,10,0) 0%,
+    rgba(10,10,10,0) 50%,
+    rgba(10,10,10,0.7) 100%),
+    url(../../assets/images/avatar.png);
+    color: $white;
+
+    .title{
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+  }
+
+  .card:hover{
+    cursor: pointer;
+    box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+  }
+
+  .card:nth-child(n){
+    grid-column-start: span 12;
+  }
+
+}
+
+@media screen and (min-width: 690px){
+  .home-gallery{
+    .card:nth-child(n){
+      grid-column-start: span 6;
+    }
+  }
+}
+
+@media screen and (min-width: 960px){
+  .home-gallery{
+    .card:nth-child(1), .card:nth-child(6){
+      grid-column-start: span 6;
+    }
+
+    .card:nth-child(2), .card:nth-child(3), .card:nth-child(4), .card:nth-child(5){
+      grid-column-start: span 3;
+    }
+  }
+}
