@@ -1,0 +1,40 @@
+@import '../../assets/styles/variables';
+
+.left-aside {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .trending-articles {
+    .trending-article-block {
+      margin: 30px 0;
+      padding-bottom: 2px;
+    }
+
+    .trending-article-block a {
+      display: block;
+      margin: 10px 0;
+    }
+
+    .trending-article-block:hover {
+      box-shadow: 0px 13px 18px -8px rgba(0, 0, 0, 0.1);
+      transform: scale(1.0);
+    }
+
+    .trending-article-block a.trending-article-title {
+      color: $black;
+    }
+
+    .trending-article-block a.trending-article-comments {
+      color: $secondary-dark;
+      font-size: 0.9em;
+    }
+  }
+
+}
+
+@media screen and (min-width: 960px) {
+  .left-aside {
+    text-align: left;
+  }
+}

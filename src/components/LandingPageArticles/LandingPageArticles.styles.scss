@@ -1,0 +1,35 @@
+.landing-page-articles{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 16px;
+  padding-top: 50px;
+  overflow: hidden;
+
+  .left-aside, .right-aside, .featured-article{
+    grid-column-start: span 12;
+  }
+}
+
+@media screen and (min-width: 690px){
+  .landing-page-articles{
+    .left-aside, .right-aside{
+      grid-column-start: span 12;
+    }
+  }
+}
+
+@media screen and (min-width: 960px){
+  .landing-page-articles{
+    .left-aside{
+      grid-column-start: span 2;
+    }
+
+    .featured-article{
+      grid-column-start: span 6;
+    }
+
+    .right-aside{
+      grid-column-start: span 4;
+    }
+  }
+}

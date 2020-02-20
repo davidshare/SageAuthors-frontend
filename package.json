@@ -4,7 +4,7 @@
   "main": "index.js",
   "repository": "https://github.com/davidshare/SageAuthors-frontend.git",
   "author": "davidshare <davidessienshare@gmail.com>",
-  "license": "GNU",
+  "license": "ISC",
   "scripts": {
     "start:dev": "webpack-dev-server",
     "build": "yarn webpack --config webpack.config.prod.js",
