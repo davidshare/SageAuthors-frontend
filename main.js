@@ -341,7 +341,7 @@ module.exports = __webpack_require__.p + "menu.svg";
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(24);
+module.exports = __webpack_require__(27);
 
 
 /***/ }),
@@ -841,6 +841,24 @@ module.exports = _nonIterableRest;
 
 /***/ }),
 /* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1053,7 +1071,163 @@ var LandingPageGallery_component_LandingPageGallery = function LandingPageGaller
 };
 
 /* harmony default export */ var LandingPageGallery_component = (LandingPageGallery_component_LandingPageGallery);
+// EXTERNAL MODULE: ./src/components/LeftAside/LeftAside.styles.scss
+var LeftAside_styles = __webpack_require__(24);
+
+// CONCATENATED MODULE: ./src/components/LeftAside/LeftAside.component.js
+
+
+
+var LeftAside_component_LeftAside = function LeftAside() {
+  return react_default.a.createElement("aside", {
+    className: "left-aside"
+  }, react_default.a.createElement("div", {
+    className: "trending-articles"
+  }, react_default.a.createElement("h3", null, "Trending"), react_default.a.createElement("p", {
+    className: "trending-article-block"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-comments"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit.")), react_default.a.createElement("p", {
+    className: "trending-article-block"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-comments"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit.")), react_default.a.createElement("p", {
+    className: "trending-article-block"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-comments"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit.")), react_default.a.createElement("p", {
+    className: "trending-article-block"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-comments"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "trending-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit."))));
+};
+
+/* harmony default export */ var LeftAside_component = (LeftAside_component_LeftAside);
+// EXTERNAL MODULE: ./src/components/RightAside/RightAside.styles.scss
+var RightAside_styles = __webpack_require__(25);
+
+// CONCATENATED MODULE: ./src/components/RightAside/RightAside.component.js
+
+
+
+var RightAside_component_RightAside = function RightAside() {
+  return react_default.a.createElement("aside", {
+    className: "right-aside"
+  }, react_default.a.createElement("div", {
+    className: "popular-articles"
+  }, react_default.a.createElement("h3", null, "Popular"), react_default.a.createElement("div", {
+    className: "popular-article-block"
+  }, react_default.a.createElement("img", {
+    src: "../../assets/images/avatar.png"
+  }), react_default.a.createElement("p", {
+    className: "popular-articles-text"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "popular-article-comment"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "popular-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit."))), react_default.a.createElement("div", {
+    className: "popular-article-block"
+  }, react_default.a.createElement("img", {
+    src: "../../assets/images/avatar.png"
+  }), react_default.a.createElement("p", {
+    className: "popular-articles-text"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "popular-article-comment"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "popular-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit."))), react_default.a.createElement("div", {
+    className: "popular-article-block"
+  }, react_default.a.createElement("img", {
+    src: "../../assets/images/avatar.png"
+  }), react_default.a.createElement("p", {
+    className: "popular-articles-text"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "popular-article-comment"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "popular-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit."))), react_default.a.createElement("div", {
+    className: "popular-article-block"
+  }, react_default.a.createElement("img", {
+    src: "../../assets/images/avatar.png"
+  }), react_default.a.createElement("p", {
+    className: "popular-articles-text"
+  }, react_default.a.createElement("a", {
+    href: "",
+    className: "popular-article-comment"
+  }, "Lorem Ipsum"), react_default.a.createElement("a", {
+    href: "",
+    className: "popular-article-title"
+  }, "cupidatat non proident, sunt in culpa qui officia deserunt mollit.")))));
+};
+
+/* harmony default export */ var RightAside_component = (RightAside_component_RightAside);
+// CONCATENATED MODULE: ./src/components/FeaturedArticle/FeaturedArticle.component.js
+
+
+var FeaturedArticle_component_FeaturedArticle = function FeaturedArticle() {
+  return react_default.a.createElement("div", {
+    className: "featured-article"
+  }, react_default.a.createElement("img", {
+    src: "../../assets/images/avatar.png",
+    className: "featured-article-image"
+  }), react_default.a.createElement("a", {
+    href: "#",
+    className: "featured-article-category"
+  }, "in Category"), react_default.a.createElement("p", {
+    className: "featured-article-details"
+  }, react_default.a.createElement("span", {
+    className: "featured-article-date"
+  }), react_default.a.createElement("span", {
+    className: "featured-article-comments"
+  })), react_default.a.createElement("h3", {
+    className: "featured-article-title"
+  }, "lorem ipsum title"), react_default.a.createElement("p", {
+    className: "featured-article-content"
+  }, "lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua hic tempora est veritatis culpa fugiat doloribus fugit in sed harum veniam porro eveniet maxime labore assumenda non illum possimus aut vero laudantium cum magni numquam dolorem explicabo quidem quasi nesciunt ipsum deleniti facilis neque similique nisi ad magnam accusamus quae provident dolor ab atque modi laboriosam fuga suscipit ea beatae ipsam consequatur saepe dolore nulla error quo iusto expedita nemo commodi aspernatur aliquam enim reiciendis rerum necessitatibus recusandae sint amet placeat temporibus autem iste deserunt esse dolores reprehenderit doloremque pariatur velit maiores repellat dignissimos asperiores aperiam alias a corporis id praesentium voluptatibus soluta voluptatem sit molestiae quas odio facere nostrum laborum incidunt eaque nihil ullam rem mollitia at cumque iure tenetur tempore totam repudiandae quisquam quod architecto officia vitae consectetur cupiditate molestias delectus voluptates earum et impedit quibusdam odit sequi perferendis eius perspiciatis eos quam quaerat officiis sunt ratione consequuntur quia quis obcaecati repellendus exercitationem vel minima libero blanditiis eligendi minus dicta voluptas excepturi nam eum inventore voluptatum ducimus sapiente dolorum itaque ipsa qui omnis debitis voluptate quos aliquid accusantium ex illo corrupti ut adipisci natus animi distinctio optio nobis unde similique excepturi vero culpa molestias fugit dolorum non amet iure inventore nihil suscipit explicabo veritatis officiis distinctio nesciunt saepe incidunt", ' '));
+};
+
+/* harmony default export */ var FeaturedArticle_component = (FeaturedArticle_component_FeaturedArticle);
+// EXTERNAL MODULE: ./src/components/LandingPageArticles/LandingPageArticles.styles.scss
+var LandingPageArticles_styles = __webpack_require__(26);
+
+// CONCATENATED MODULE: ./src/components/LandingPageArticles/LandingPageArticles.component.js
+
+
+
+
+
+
+var LandingPageArticles_component_LandingPageArticles = function LandingPageArticles() {
+  return react_default.a.createElement("section", {
+    className: "landing-page-articles container"
+  }, react_default.a.createElement(LeftAside_component, null), react_default.a.createElement(FeaturedArticle_component, null), react_default.a.createElement(RightAside_component, null));
+};
+
+/* harmony default export */ var LandingPageArticles_component = (LandingPageArticles_component_LandingPageArticles);
 // CONCATENATED MODULE: ./src/components/App.js
+
 
 
 
@@ -1087,7 +1261,7 @@ function (_Component) {
      * @memberof App
      */
     value: function render() {
-      return react_default.a.createElement("div", null, react_default.a.createElement(Navbar_component, null), react_default.a.createElement(LandingPageGallery_component, null));
+      return react_default.a.createElement(react["Fragment"], null, react_default.a.createElement(Navbar_component, null), react_default.a.createElement(LandingPageGallery_component, null), react_default.a.createElement(LandingPageArticles_component, null));
     }
   }]);
 
