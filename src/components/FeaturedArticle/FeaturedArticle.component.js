@@ -1,11 +1,12 @@
 import React from 'react';
+import avatar from '../../assets/images/avatar.png';
 
 import './FeaturedArticle.styles.scss';
 
 const FeaturedArticle = () => (
   <div className="featured-article">
     <img
-      src="../../assets/images/avatar.png"
+      src={avatar}
       className="featured-article-image"
     />
     <a href="#" className="featured-article-category">
