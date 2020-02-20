@@ -995,54 +995,60 @@ var LandingPageGallery_component_LandingPageGallery = function LandingPageGaller
     className: "container"
   }, react_default.a.createElement("div", {
     className: "home-gallery"
-  }, react_default.a.createElement("div", {
-    className: "card"
+  }, react_default.a.createElement("a", {
+    className: " card",
+    href: "#"
   }, react_default.a.createElement("p", {
     className: "author"
   }, "John Wick"), react_default.a.createElement("p", {
     className: "category"
   }, "fiction"), react_default.a.createElement("p", {
-    className: "Title"
-  }, "Never too late to die")), react_default.a.createElement("div", {
-    className: "card"
+    className: "title"
+  }, "Never too late to die")), react_default.a.createElement("a", {
+    className: " card",
+    href: "#"
   }, react_default.a.createElement("p", {
     className: "author"
   }, "John Wick"), react_default.a.createElement("p", {
     className: "category"
   }, "fiction"), react_default.a.createElement("p", {
-    className: "Title"
-  }, "Never too late to die")), react_default.a.createElement("div", {
-    className: "card"
+    className: "title"
+  }, "Never too late to die")), react_default.a.createElement("a", {
+    className: " card",
+    href: "#"
   }, react_default.a.createElement("p", {
     className: "author"
   }, "John Wick"), react_default.a.createElement("p", {
     className: "category"
   }, "fiction"), react_default.a.createElement("p", {
-    className: "Title"
-  }, "Never too late to die")), react_default.a.createElement("div", {
-    className: "card"
+    className: "title"
+  }, "Never too late to die")), react_default.a.createElement("a", {
+    className: " card",
+    href: "#"
   }, react_default.a.createElement("p", {
     className: "author"
   }, "John Wick"), react_default.a.createElement("p", {
     className: "category"
   }, "fiction"), react_default.a.createElement("p", {
-    className: "Title"
-  }, "Never too late to die")), react_default.a.createElement("div", {
-    className: "card"
+    className: "title"
+  }, "Never too late to die")), react_default.a.createElement("a", {
+    className: " card",
+    href: "#"
   }, react_default.a.createElement("p", {
     className: "author"
   }, "John Wick"), react_default.a.createElement("p", {
     className: "category"
   }, "fiction"), react_default.a.createElement("p", {
-    className: "Title"
-  }, "Never too late to die")), react_default.a.createElement("div", {
-    className: "card"
+    className: "title"
+  }, "Never too late to die")), react_default.a.createElement("a", {
+    className: " card",
+    href: "#"
   }, react_default.a.createElement("p", {
     className: "author"
   }, "John Wick"), react_default.a.createElement("p", {
     className: "category"
   }, "fiction"), react_default.a.createElement("p", {
-    className: "Title"
+    className: "title"
   }, "Never too late to die"))));
 };
 
