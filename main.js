@@ -341,7 +341,7 @@ module.exports = __webpack_require__.p + "menu.svg";
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(23);
+module.exports = __webpack_require__(24);
 
 
 /***/ }),
@@ -835,6 +835,12 @@ module.exports = _nonIterableRest;
 
 /***/ }),
 /* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+/* 24 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -977,7 +983,72 @@ var Navbar_component_Navbar = function Navbar() {
 // EXTERNAL MODULE: ./src/components/App.scss
 var components_App = __webpack_require__(22);
 
+// EXTERNAL MODULE: ./src/components/LandingPageGallery/LandingPageGallery.styles.scss
+var LandingPageGallery_styles = __webpack_require__(23);
+
+// CONCATENATED MODULE: ./src/components/LandingPageGallery/LandingPageGallery.component.js
+
+
+
+var LandingPageGallery_component_LandingPageGallery = function LandingPageGallery() {
+  return react_default.a.createElement("section", {
+    className: "container"
+  }, react_default.a.createElement("div", {
+    className: "home-gallery"
+  }, react_default.a.createElement("div", {
+    className: "card"
+  }, react_default.a.createElement("p", {
+    className: "author"
+  }, "John Wick"), react_default.a.createElement("p", {
+    className: "category"
+  }, "fiction"), react_default.a.createElement("p", {
+    className: "Title"
+  }, "Never too late to die")), react_default.a.createElement("div", {
+    className: "card"
+  }, react_default.a.createElement("p", {
+    className: "author"
+  }, "John Wick"), react_default.a.createElement("p", {
+    className: "category"
+  }, "fiction"), react_default.a.createElement("p", {
+    className: "Title"
+  }, "Never too late to die")), react_default.a.createElement("div", {
+    className: "card"
+  }, react_default.a.createElement("p", {
+    className: "author"
+  }, "John Wick"), react_default.a.createElement("p", {
+    className: "category"
+  }, "fiction"), react_default.a.createElement("p", {
+    className: "Title"
+  }, "Never too late to die")), react_default.a.createElement("div", {
+    className: "card"
+  }, react_default.a.createElement("p", {
+    className: "author"
+  }, "John Wick"), react_default.a.createElement("p", {
+    className: "category"
+  }, "fiction"), react_default.a.createElement("p", {
+    className: "Title"
+  }, "Never too late to die")), react_default.a.createElement("div", {
+    className: "card"
+  }, react_default.a.createElement("p", {
+    className: "author"
+  }, "John Wick"), react_default.a.createElement("p", {
+    className: "category"
+  }, "fiction"), react_default.a.createElement("p", {
+    className: "Title"
+  }, "Never too late to die")), react_default.a.createElement("div", {
+    className: "card"
+  }, react_default.a.createElement("p", {
+    className: "author"
+  }, "John Wick"), react_default.a.createElement("p", {
+    className: "category"
+  }, "fiction"), react_default.a.createElement("p", {
+    className: "Title"
+  }, "Never too late to die"))));
+};
+
+/* harmony default export */ var LandingPageGallery_component = (LandingPageGallery_component_LandingPageGallery);
 // CONCATENATED MODULE: ./src/components/App.js
+
 
 
 
@@ -1010,7 +1081,7 @@ function (_Component) {
      * @memberof App
      */
     value: function render() {
-      return react_default.a.createElement("div", null, react_default.a.createElement(Navbar_component, null));
+      return react_default.a.createElement("div", null, react_default.a.createElement(Navbar_component, null), react_default.a.createElement(LandingPageGallery_component, null));
     }
   }]);
 
