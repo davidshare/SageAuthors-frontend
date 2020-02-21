@@ -21,10 +21,15 @@ const Navbar = () => {
             alt=""
             className="nav-open"
             onClick={() => setShowMenu(true)}
+            data-testid="menu-icon"
           />
         )}
         {!authenticated && showMenu && (
-          <div className="nav-close" onClick={() => setShowMenu(false)}>
+          <div
+            className="nav-close"
+            onClick={() => setShowMenu(false)}
+            data-testid="close-nav"
+          >
             &#10005;
           </div>
         )}
@@ -33,12 +38,16 @@ const Navbar = () => {
             src="../../assets/images/avatar.png"
             alt=""
             className="avatar-mobile"
-            onClick={() => (windowSize < 860 ? setShowMenu(!showMenu) : '')
-            }
+            onClick={() => (windowSize < 860 ? setShowMenu(!showMenu) : '')}
+            data-testid="avatar-icon"
           />
         )}
       </div>
-      <nav className={showMenu ? 'nav' : 'hideNav'} id="nav">
+      <nav
+        className={showMenu ? 'nav' : 'hideNav'}
+        id="nav"
+        data-testid="navlist"
+      >
         <ul className="nav-list">
           <li>
             <a href="sports">Sports</a>
@@ -67,7 +76,7 @@ const Navbar = () => {
           )}
         </ul>
       </nav>
-      <ul className='nav-auth-links'>
+      <ul className="nav-auth-links">
         {!authenticated && (
           <li className="signin-link">
             <a href="signin">Signin</a>
@@ -79,13 +88,14 @@ const Navbar = () => {
           </li>
         )}
         {authenticated && (
-          <li><img
-            src="../../assets/images/avatar.png"
-            alt=""
-            className="avatar"
-            onClick={() => (windowSize < 860 ? setShowMenu(!showMenu) : '')
-            }
-          /></li>
+          <li>
+            <img
+              src="../../assets/images/avatar.png"
+              alt=""
+              className="avatar"
+              onClick={() => (windowSize < 860 ? setShowMenu(!showMenu) : '')}
+            />
+          </li>
         )}
       </ul>
     </div>

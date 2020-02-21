@@ -61,15 +61,6 @@ const LeftAside = () => (
           cupidatat non proident, sunt in culpa qui officia deserunt mollit.
         </a>
       </p>
-
-      <p className="trending-article-block">
-        <a href="" className="trending-article-comments">
-          Lorem Ipsum
-        </a>
-        <a href="" className="trending-article-title">
-          cupidatat non proident, sunt in culpa qui officia deserunt mollit.
-        </a>
-      </p>
     </div>
   </aside>
 );

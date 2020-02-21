@@ -1,9 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import Navbar from './Navbar/Navbar.component';
-
 import './App.scss';
-import LandingPageGallery from './LandingPageGallery/LandingPageGallery.component';
-import LandingPageArticles from './LandingPageArticles/LandingPageArticles.component';
+import LandingPage from './LandingPage/LandingPage.compoent';
 
 /**
  * @class App
@@ -17,9 +14,7 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar />
-        <LandingPageGallery />
-        <LandingPageArticles />
+        <LandingPage />
       </Fragment>
     );
   }
