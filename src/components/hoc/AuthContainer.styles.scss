@@ -1,0 +1,112 @@
+@import '../../assets/styles/variables';
+
+.auth-container {
+  width: 100%;
+  height: 100vh;
+  // z-index: -2;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+  background-image: linear-gradient(to right bottom, rgba(12, 135, 223, 0.85), rgba(4, 62, 112, 0.9)), url(../../assets/images/auth-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .auth-home-link{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: $white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+
+    .submit-action {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+
+      .btn {
+        font-size: 1.1em;
+        padding: 5px 20px;
+      }
+    }
+  }
+
+  .auth-page-message {
+    grid-row: 1;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px 30px;
+    font-weight: normal;
+    font-size: 1.2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    .auth-welcome-text {
+      font-size: 2em;
+    }
+
+    .auth-welcome-text .app-name {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .auth-container {
+    grid-template-columns: repeat(12, 1fr);
+    overflow: hidden;
+
+    .auth-page-message {
+      grid-column-start: 7;
+      grid-column-end: 13;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      justify-content: center;
+
+      .auth-welcome-text {
+        margin-bottom: 20px;
+      }
+    }
+
+    .auth-form {
+      grid-column-start: 2;
+      grid-column-end: 7;
+      justify-content: center;
+
+      .submit-action {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+        .btn {
+          font-size: 1.1em;
+          padding: 5px 20px;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1150px) {
+
+}

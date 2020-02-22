@@ -1,0 +1,41 @@
+@import '../../assets/styles/variables';
+
+.input-group{
+  position: relative;
+  margin: 15px 0;
+  border-bottom: 1px solid $secondary-white;
+  display: block;
+  width: 80%;
+
+  input{
+    border: 0;
+    width:100%;
+  }
+
+  label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s;
+    font-weight: normal;
+    pointer-events: none;
+  }
+
+  input, label{
+    font-size: 1.2em;
+    font-family: inherit;
+    padding:5px 10px;
+  }
+
+  input:focus{
+    outline: none;
+
+  }
+
+  input:focus + label,
+  input:valid + label{
+    font-size: 75%;
+    transform: translate3d(0, -100%, 0);
+    opacity: 1;
+  }
+}
