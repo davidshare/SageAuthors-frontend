@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className="navbar container" id="navbar">
       <div className="top-nav">
-        <h2 className="nav-brand">SageAuthors</h2>
+        <h2 className="nav-brand"><a href='/'>SageAuthors</a></h2>
         {!authenticated && !showMenu && (
           <img
             src={MenuIcon}

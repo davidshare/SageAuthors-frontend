@@ -1,6 +1,10 @@
 @import '../../assets/styles/variables';
 
 #navbar {
+  background-color: $white;
+  width: 100vw;
+  padding: 0 50px;
+
   .top-nav {
     display: flex;
     justify-content: space-between;
@@ -64,7 +68,8 @@
   #navbar {
     display: flex;
     align-items: center;
-    padding: 5px 0;
+    width: 100%;
+    padding: 5px 100px;
     justify-content: space-between;
     border-bottom: 1px solid $secondary-white;
 
