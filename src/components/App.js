@@ -1,8 +1,12 @@
 import React, { Component, Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './App.scss';
+
 import LandingPage from './LandingPage/LandingPage.compoent';
 import Signup from './Signup/Signup.component';
+import Signin from './Signin/Signin.component';
+
+import './App.scss';
+import AuthContextProvider from '../context/Auth.context';
 
 /**
  * @class App
@@ -15,12 +19,15 @@ class App extends Component {
    */
   render() {
     return (
-      <Fragment>
-        <Switch>
-          <Route path='/' component={LandingPage} exact />
-          <Route path='/signup' component={Signup} exact />
-        </Switch>
-      </Fragment>
+      <AuthContextProvider>
+        <Fragment>
+          <Switch>
+            <Route path="/" component={LandingPage} exact />
+            <Route path="/signup" component={Signup} exact />
+            <Route path="/signin" component={Signin} exact />
+          </Switch>
+        </Fragment>
+      </AuthContextProvider>
     );
   }
 }

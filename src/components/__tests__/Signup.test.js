@@ -1,5 +1,7 @@
 import React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import {
+  render, cleanup, fireEvent, /* wait */
+} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Signup from '../Signup/Signup.component';
 
@@ -13,7 +15,7 @@ describe('Signup component', () => {
     username: 'chrisis',
     password: 'gemfaith,1609#',
   };
-  const onSubmit = jest.fn();
+  const onSubmit = jest.fn((e) => e.preventDefault());
 
   it('should submit the form', async () => {
     const { getByLabelText, getByRole } = render(
@@ -41,6 +43,9 @@ describe('Signup component', () => {
     });
 
     fireEvent.click(getByRole(/signup/i));
-    // expect(onSubmit).toHaveBeenCalledTimes(1);
+    // await wait(() => {
+    //   expect(onSubmit).toHaveBeenCalledTimes(1);
+    //   expect(onSubmit).toHaveBeenCalledWith(...user);
+    // });
   });
 });
